@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Outfit:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌿 THEMES */
+
+/* DAWN */
+.dawn {
+  --bg: #f6f6f4;
+  --text: #2f2f2f;
+  --card: #ffffff;
+  --muted: #f3f3f1;
+  --border: #e8e8e6;
+  --primary: #8fa889;
+}
+
+/* NIGHT */
+.night {
+  --bg: #0f1412;
+  --text: #e6efe8;
+  --card: #161c19;
+  --muted: #1f2622;
+  --border: #2a332e;
+  --primary: #8fa889;
+}
+
+/* HIGH CONTRAST */
+.contrast {
+  --bg: #ffffff;
+  --text: #000000;
+  --card: #ffffff;
+  --muted: #eeeeee;
+  --border: #000000;
+  --primary: #000000;
+}
+
+/* 🌿 GLOBAL */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+}
+
+/* smooth transitions */
+* {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* 🧠 DYSLEXIA (FIXED) */
+html.dyslexic,
+html.dyslexic * {
+  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+  letter-spacing: 0.03em;
+}
+
+/* 🌿 CONTAINER */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
